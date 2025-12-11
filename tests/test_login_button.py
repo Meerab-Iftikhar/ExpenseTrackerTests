@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 def test_login_button_exists():
     driver = get_driver()
     try:
-        driver.get("http://65.0.173.26:3000/")
+        driver.get("http://13.126.82.141:3000/")
         wait = WebDriverWait(driver, 6)
         button = wait.until(EC.presence_of_element_located((By.ID, "login-btn")))
         assert button.is_displayed()
